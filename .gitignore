@@ -1,0 +1,52 @@
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Spring Boot
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment / secrets
+.env
+application-local.properties
+
+# Generated files
+*.class
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+ml-service/venv/
+ml-service/.venv/
+
+# Local configuration and secrets
+src/main/resources/application.properties
+.env.*
+!.env.example
+
+# Temporary utilities
+/GenerateBcrypt.java
+
+# Unused alternative ML training pipeline and large dataset
+ml-service/creditcard.csv
+ml-service/fraud_detection_model.pkl
+ml-service/train_model.py
+ml-service/New Text Document.txt
+
+ml-service/New Text Document.txt

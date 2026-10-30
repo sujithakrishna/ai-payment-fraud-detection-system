@@ -1,0 +1,4 @@
+### Get transaction details
+GET http://localhost:8080/api/transactions/62
+Authorization: Bearer {{jwt_token}}
+Accept: application/json
