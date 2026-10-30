@@ -1,4 +1,4 @@
-# Maven
+﻿# Maven
 target/
 !.mvn/wrapper/maven-wrapper.jar
 
@@ -21,24 +21,97 @@ out/
 .DS_Store
 Thumbs.db
 
-# Environment / secrets
+# Environment variables and secrets
 .env
+.env.*
+!.env.example
+.envrc
 application-local.properties
+src/main/resources/application.properties
 
-# Generated files
+# Generated Java files
 *.class
-# Python
+
+# Python bytecode and caches
 __pycache__/
 *.py[cod]
+*$py.class
+
+# Python virtual environments
 venv/
 .venv/
+env/
+ENV/
+env.bak/
+venv.bak/
 ml-service/venv/
 ml-service/.venv/
 
-# Local configuration and secrets
-src/main/resources/application.properties
-.env.*
-!.env.example
+# Python build and distribution
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Python testing and coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py.cover
+*.lcov
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Python tooling
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+.spyderproject
+.spyproject
+.ropeproject
+.ipynb_checkpoints
+.ipython/
+profile_default/
+ipython_config.py
+cython_debug/
+tempCodeRunnerFile.py
+
+# Jupyter and documentation builds
+docs/_build/
+.site/
+site/
+
+# Python package managers
+.pdm-python
+.pdm-build/
+.pixi/
+.pypackages/
+.poetry/
+.venv/
 
 # Temporary utilities
 /GenerateBcrypt.java
@@ -49,4 +122,9 @@ ml-service/fraud_detection_model.pkl
 ml-service/train_model.py
 ml-service/New Text Document.txt
 
-ml-service/New Text Document.txt
+# Other local application data
+.streamlit/secrets.toml
+.pypirc
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
